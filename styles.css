@@ -365,7 +365,7 @@ img {
   }
 
   .home {
-    padding: 5rem 0 2rem;
+    padding: 8rem 0 2rem;
   }
 
   .home-img {
@@ -1033,7 +1033,7 @@ img {
 .profileimage {
   background-color: transparent;
   border: none;
-  margin-top: 20px;
+  margin-top: 35px;
   border-radius: 5em;
   width: 100px;
   height: 100px;
