@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sibin's Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-photo"></div>
+        <nav class="site-navbar grid">
+            <div>
+                <div class="tab-container">
+                    <input type="radio" name="tab" id="tab1" class="tab tab--1" />
+                    <label class="tab_label" for="tab1" data-target="#home">Home</label>
+
+                    <input type="radio" name="tab" id="tab2" class="tab tab--2" />
+                    <label class="tab_label" for="tab2" data-target="#about">About</label>
+
+                    <input type="radio" name="tab" id="tab3" class="tab tab--3" />
+                    <label class="tab_label" for="tab3" data-target="#skills">Skills</label>
+
+                    <input type="radio" name="tab" id="tab4" class="tab tab--4" />
+                    <label class="tab_label" for="tab4" data-target="#contact">Contact</label>
+
+                    <div class="indicator"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home grid" id="home">
+            <div class="home_data">
+                <h1 class="home-section__title"><br>Sibin George<br>Web Developer</h1>
+            </div>
+
+            <div class="home-social">
+                <a onclick="redirectToLinkdln()" class="home-social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a onclick="redirectToGit()" class="home-social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <button class="pushable" id="downloadButton">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="frontt">
+                    Download Resume
+                </span>
+            </button>
+
+            <div class="home-img">
+                <div class="card">
+                    <div class="card-photo"></div>
+                    <div class="card-title">
+                        Sibin George<br>
+                    </div>
+                    <div class="card-socials">
+                        <button class="card-socials-btn facebook" onclick="redirectToFacebook()">
+                            <svg data-name="Layer 21" height="24" id="Layer_21" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <title></title>
+                                <path d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="card-socials-btn github" onclick="redirectToGit()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="card-socials-btn linkedin" onclick="redirectToLinkdln()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="512" viewBox="0 0 512 512" height="512">
+                                <path
+                                    d="m51.326 185.85h90.011v270.872h-90.011zm45.608-130.572c-30.807 0-50.934 20.225-50.934 46.771 0 26 19.538 46.813 49.756 46.813h.574c31.396 0 50.948-20.814 50.948-46.813-.589-26.546-19.551-46.771-50.344-46.771zm265.405 124.209c-47.779 0-69.184 26.28-81.125 44.71v-38.347h-90.038c1.192 25.411 0 270.872 0 270.872h90.038v-151.274c0-8.102.589-16.174 2.958-21.978 6.519-16.174 21.333-32.923 46.182-32.923 32.602 0 45.622 24.851 45.622 61.248v144.926h90.024v-155.323c0-83.199-44.402-121.911-103.661-121.911z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about-section__container grid">
+                <div>
+                    <h2 class="about-section__subtitle">I'm Sibin</h2>
+                    <p class="about-section__text">I am Sibin George a Full-Stack Software Developer,
+                        with much enthusiasm and experience in developing software systems. I have the experience of
+                        organizing and successfully accomplishing software projects with a rich set of features and
+                        functionality.
+                        Especially, I have been successful in bending abstract system requirements into real software
+                        solutions
+                        having high security and performance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills" id="skills">
+            <h2 class="section-title">Area of Expertise</h2>
+            <div class="skills-section__container grid">
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/html.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>HTML</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+                            <div class="front-content">
+                                <small class="badge">HTML</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Specialize in crafting clean and semantic HTML code.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/css.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>CSS</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+                            <div class="front-content">
+                                <small class="badge">CSS</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Transforms concepts into visually seamlessly interactive web experiences.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/typescript.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>TYPESCRIPT</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">TYPESCRIPT</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>JavaScript superset with static typing for robust applications.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/javascript.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>JAVASCRIPT</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">JAVASCRIPT</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Dynamic scripting language for interactive web development.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/angular.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>ANGULAR</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">ANGULAR</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>JavaScript framework for building dynamic, single-page web applications.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/.net.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>.NET</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">.NET</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Microsoft framework for building scalable and robust applications.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/c.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>C#</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">C#</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Versatile programming language for robust and efficient applications.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/mysql.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>MYSQL</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">MYSQL</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Popular open-source relational database system for efficient data management.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/sqlserver.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>SQL SERVER</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">SQL SERVER</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Microsoft's robust relational database system for enterprise-level applications.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/git.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>GIT</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">GIT</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Version control system for tracking changes in collaborative projects.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/vscode.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>VS CODE</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">VS CODE</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Free source code editor with powerful developer tools.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/vs.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>VISUAL STUDIO</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">VISUAL STUDIO</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Integrated development environment for building and managing applications efficiently.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/postman.svg" alt="CSS Logo" height="50px" width="50px">
+                                <strong>POSTMAN</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">POSTMAN</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>API development and testing platform for streamlined workflows.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/ssms.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>SSMS</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">SSMS</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Microsoft SQL Server Management Studio for database administration tasks.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/jira.jpg" alt="CSS Logo" height="50px" width="50px">
+                                <strong>JIRA</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">JIRA</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Agile project management tool for efficient collaboration and development.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <img src="./assests/figma.png" alt="CSS Logo" height="50px" width="50px">
+                                <strong>FIGMA</strong>
+                            </div>
+                        </div>
+                        <div class="front">
+
+                            <div class="img">
+                                <div class="circle">
+                                </div>
+                                <div class="circle" id="right">
+                                </div>
+                                <div class="circle" id="bottom">
+                                </div>
+                            </div>
+
+                            <div class="front-content">
+                                <small class="badge">FIGMA</small>
+                                <div class="description">
+                                    <div class="title">
+                                        <p class="title">
+                                            <strong>Cloud-based design tool for collaborative and interactive prototyping.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-section__container grid">
+                <div class="form-container">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="email">Name</label>
+                            <input required="" name="name" id="name" type="text">
+                            <label for="email">Email</label>
+                            <input required="" name="email" id="email" type="text">
+                        </div>
+                        <div class="form-group">
+                            <textarea required="" cols="50" rows="10" id="textarea" name="textarea">
+                            </textarea>
+                        </div>
+                        <button type="submit" class="form-submit-btn" onclick="sendEmail()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-title">Sibin George</p>
+        <div class="footer-social">
+            <a onclick="redirectToFacebook()" class="footer-icon"><i class='bx bxl-facebook'></i></a>
+            <a onclick="redirectToInstgram()" class="footer-icon"><i class='bx bxl-instagram'></i></a>
+            <a onclick="redirectToTwitter()" class="footer-icon"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <p class="footer-copy">&#169; All rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
