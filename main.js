@@ -76,8 +76,11 @@ function sendEmail() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("textarea").value;
+    if (!name || !email || !message) {
+        return;
+    }
     var subject = encodeURIComponent(name + " - Inquiry");
     var body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
-    var mailtoLink = "mailto:sibingeorge009@gmail.com.com?subject=" + subject + "&body=" + body;
+    var mailtoLink = "mailto:sibingeorge009@gmail.com?subject=" + subject + "&body=" + body;
     window.location.href = mailtoLink;
 }
