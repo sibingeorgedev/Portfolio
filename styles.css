@@ -737,7 +737,7 @@ img {
 }
 
 .tab--2:checked~.indicator {
-  left: calc(130px + 2px);
+  left: calc(130px * 1 + 2px);
 }
 
 .tab--3:checked~.indicator {

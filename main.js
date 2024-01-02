@@ -70,7 +70,7 @@ const scrollReveal = ScrollReveal({
 });
 
 scrollReveal.reveal('.home_data', {});
-scrollReveal.reveal('.home-section__img, .about-section__subtitle, .about-section__text, .skills-section__img', { delay: 400 });
+scrollReveal.reveal('.home-section__img, .about-section__subtitle, .about-section__text, .skills-section__img, .delay', { delay: 200 });
 
 function sendEmail() {
     var name = document.getElementById("name").value;
