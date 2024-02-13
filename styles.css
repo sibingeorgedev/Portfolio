@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Protest+Riot&display=swap');
+
 
 .header-photo {
   transform: scale(0.25) translate(220px, 230px);
@@ -225,6 +228,13 @@ img {
 
 .about-section__subtitle {
   margin-bottom: var(--mb-2);
+}
+
+.custom_font_desc {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
 }
 
 .footer {
@@ -1063,9 +1073,9 @@ img {
 
 .Name {
   color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lobster", sans-serif;
   padding: 15px;
-  font-size: 20px;
+  font-size: 35px;
   margin-top: 25px;
 }
 
