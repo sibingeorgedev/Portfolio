@@ -230,6 +230,14 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.color_red {
+  color: red;
+}
+
+.color_green {
+  color: green;
+}
+
 .custom_font_desc {
   font-family: "Protest Riot", sans-serif;
   font-weight: 400;
