@@ -36,24 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
     updateIndicatorPosition(0);
 });
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     var tabLabels = document.querySelectorAll('.tab_label');
-//     var indicator = document.querySelector('.indicator');
-//     window.addEventListener('scroll', function () {
-//         var windowHeight = window.innerHeight;
-//         tabLabels.forEach(function (label, index) {
-//             var targetId = label.getAttribute('data-target');
-//             var targetElement = document.querySelector(targetId);
-//             if (targetElement) {
-//                 var rect = targetElement.getBoundingClientRect();
-//                 if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {
-//                     indicator.style.left = index * 130 + 2 + 'px';
-//                 }
-//             }
-//         });
-//     });
-// });
-
 document.getElementById("downloadButton").addEventListener("click", function () {
     const a = document.createElement("a");
     a.href = "./assests/Sibin Resume.pdf";

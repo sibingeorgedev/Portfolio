@@ -257,9 +257,9 @@ img {
   }
 
   .skills-section__container {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    text-align: initial;
+    text-align: center;
   }
 
   .contact-section__container {
@@ -626,6 +626,11 @@ img {
   width: 165px;
   height: 210px;
   margin: 10px;
+}
+
+.skills-section__container h2 {
+  grid-column: 1 / -1;
+  margin: 20px;
 }
 
 .content {
