@@ -91,3 +91,8 @@ function sendEmail() {
     var mailtoLink = "mailto:sibingeorge009@gmail.com?subject=" + subject + "&body=" + body;
     window.location.href = mailtoLink;
 }
+
+function redirectToMedium() {
+    var mediumUrl = 'https://medium.com/@sibingeorge2698';
+    window.open(mediumUrl, '_blank');
+}
