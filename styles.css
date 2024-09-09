@@ -262,6 +262,10 @@ img {
     text-align: center;
   }
 
+  .grid-6 {
+    grid-template-columns: repeat(6, 1fr)!important;
+  }
+
   .contact-section__container {
     justify-items: center;
   }
