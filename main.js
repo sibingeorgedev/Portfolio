@@ -1,3 +1,12 @@
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+    reset: true
+});
+scrollReveal.reveal('.timeline-item', { interval: 200 });
+
 document.addEventListener('DOMContentLoaded', function () {
     var tabLabels = document.querySelectorAll('.tab_label');
     var indicator = document.querySelector('.indicator');
@@ -68,14 +77,6 @@ function redirectToTwitter() {
     var linkdlnUrl = 'https://www.linkedin.com/in/sibin-george/';
     window.open(linkdlnUrl, '_blank');
 }
-const scrollReveal = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    delay: 200,
-    reset: true
-});
-
 scrollReveal.reveal('.home_data', {});
 scrollReveal.reveal('.home-section__img, .about-section__subtitle, .about-section__text, .skills-section__img, .delay', { delay: 200 });
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Sibin's Portfolio</title>
 </head>
 
@@ -24,11 +25,16 @@
                     <input type="radio" name="tab" id="tab3" class="tab tab--3" />
                     <label class="tab_label" for="tab3" data-target="#skills">Skills</label>
 
-                    <input type="radio" name="tab" id="tab4" class="tab tab--4" />
+                    <input type="radio" name="tab" id="tab6" class="tab tab--4" />
+                    <label class="tab_label" for="tab6" data-target="#experience">Experience</label>
+
+                    <input type="radio" name="tab" id="tab4" class="tab tab--5" />
                     <label class="tab_label" for="tab4" data-target="#education">Education</label>
 
-                    <input type="radio" name="tab" id="tab5" class="tab tab--5" />
+                    <input type="radio" name="tab" id="tab5" class="tab tab--6" />
                     <label class="tab_label" for="tab5" data-target="#contact">Contact</label>
+
+
 
                     <div class="indicator"></div>
                 </div>
@@ -85,7 +91,7 @@
                 <div class="profile-section">
                     <center>
                         <div class="profileimage">
-                            <img class="pfp" src="./assests/photo2.jpg" alt="Profile Picture">
+                            <img class="pfp" src="./assests/photo3.jpg" alt="Profile Picture">
                         </div>
                         <div class="Name">
                             <p>Sibin George</p>
@@ -447,8 +453,9 @@
                                 <div class="description">
                                     <div class="title">
                                         <p class="title">
-                                            <strong>Building user interfaces, 
-                                                particularly single-page applications, by creating reusable UI components.</strong>
+                                            <strong>Building user interfaces,
+                                                particularly single-page applications, by creating reusable UI
+                                                components.</strong>
                                         </p>
                                     </div>
                                 </div>
@@ -804,7 +811,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div></div>
 
                 <div class="skill-card">
@@ -831,7 +838,8 @@
                                 <div class="description">
                                     <div class="title">
                                         <p class="title">
-                                            <strong>MySQL Workbench is a visual database design tool and administration tool for MySQL databases.</strong>
+                                            <strong>MySQL Workbench is a visual database design tool and administration
+                                                tool for MySQL databases.</strong>
                                         </p>
                                     </div>
                                 </div>
@@ -1452,6 +1460,50 @@
             </div> -->
         </section>
 
+        <section class="section experience" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-section__container grid">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Software Engineer (Internship)</h3>
+                            <p class="timeline-company">Consuy</p>
+                            <p class="timeline-location">Calgary, Alberta, Canada - Remote</p>
+                            <p class="timeline-date">October 2024 - March 2025</p>
+                            <p class="timeline-description">
+                                I had developed scalable and interactive user interfaces using React.js, TypeScript, and
+                                Tailwind CSS in a fast-paced startup environment. I was also building backend systems
+                                with Python and integrating REST APIs using FastAPI to ensure seamless communication
+                                between frontend and backend components. My experience with PostgreSQL for database
+                                management and following best practices in React and TypeScript have allowed me
+                                to deliver high-quality, maintainable, and scalable code.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Software Development Engineer</h3>
+                            <p class="timeline-company">Carestack</p>
+                            <p class="timeline-location">Trivandrum, Kerala, India - OnSite</p>
+                            <p class="timeline-date">Marach 2021 - July 2023</p>
+                            <p class="timeline-description">
+                                I had contributed to the development
+                                of a web-based dental practice management system. I designed dynamic user interfaces
+                                using TypeScript and Angular, ensuring responsive and intuitive experiences across
+                                devices. On the backend, I utilized .NET Core and C# to build RESTful APIs, optimize
+                                server-side logic, and integrate third-party services. I also automated workflows using
+                                SignalR, improving operational efficiency and increasing practice revenue. Additionally,
+                                I optimized database queries and implemented caching mechanisms with Redis, reducing
+                                query execution times by 30% and enhancing system performance
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="education">
             <h2 class="section-title">Education</h2>
             <ul class="delay">
@@ -1510,4 +1562,3 @@
 </body>
 
 </html>
-
